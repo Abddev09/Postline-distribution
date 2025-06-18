@@ -20,7 +20,7 @@ export const submitPhone = createAsyncThunk<
   'phone/submitPhone',
   async (phone: string, { rejectWithValue }) => {
     try {
-      const response = await axios.post(`http://server.postline.uz/api/callme`, { phone });
+      const response = await axios.post(`https://server.postline.uz/api/callme`, { phone });
       return response.data;
     } catch (error) {
       return rejectWithValue("Xatolik yuz berdi");

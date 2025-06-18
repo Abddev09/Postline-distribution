@@ -17,7 +17,7 @@ const PartnersSlider = () => {
 
   useEffect(() => {
     axios
-      .get(`http://server.postline.uz/api/partners`)
+      .get(`https://server.postline.uz/api/partners`)
       .then((response) => {
         setPartners(response.data.data);
         setLoading(false);

@@ -43,7 +43,7 @@ const ModalRegister = ({ isOpen, onClose }: ModalRegisterProps) => {
       }
 
       try {
-        const response = await axios.post(`http://server.postline.uz/api/contact-us`, {
+        const response = await axios.post(`https://server.postline.uz/api/contact-us`, {
           name: formData.name,
           email: formData.email,
           phone: formData.phone, 

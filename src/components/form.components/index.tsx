@@ -42,7 +42,7 @@ const FormComponents: React.FC<FormComponentsProps> = ({ formId }) => {
     setLoading(true); 
   
     try {
-      const response = await axios.post(`http://server.postline.uz/api/price-request`, formData);
+      const response = await axios.post(`https://server.postline.uz/api/price-request`, formData);
       
       if (response.data.success) {
         console.log("Form submitted successfully:", response.data);

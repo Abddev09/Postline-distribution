@@ -20,7 +20,7 @@ const Contact = () => {
 
   useEffect(() => {
     axios
-      .get(`http://server.postline.uz/api/contact`)
+      .get(`https://server.postline.uz/api/contact`)
       .then((response) => {
         setContactInfo({
           phone: response.data.data.phone,

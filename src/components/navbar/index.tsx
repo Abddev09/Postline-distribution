@@ -26,7 +26,7 @@ const Navbar = () => {
 
   useEffect(() => {
     axios
-      .get(`http://server.postline.uz/api/contact`)
+      .get(`https://server.postline.uz/api/contact`)
       .then((response) => {
         setContactInfo({
           name: response.data.data.name,

@@ -15,7 +15,7 @@ const Products = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          `http://server.postline.uz/api/products`
+          `https://server.postline.uz/api/products`
         );
         setProducts(response.data.data); 
         setLoading(false); 
